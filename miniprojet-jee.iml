@@ -4,9 +4,11 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="hibernate.cfg.xml" />
+          <unit-entry name="hibernate.cfg.xml" value="510006c1-da84-4743-bb21-13e5ccb418ff" />
         </datasource-map>
-        <naming-strategy-map />
+        <naming-strategy-map>
+          <unit-entry name="hibernate.cfg.xml" />
+        </naming-strategy-map>
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/hibernate.cfg.xml" />
       </configuration>
     </facet>
@@ -35,5 +37,6 @@
     <orderEntry type="library" name="Spring-4.3.4.RELEASE" level="project" />
     <orderEntry type="library" name="Spring MVC-4.3.4.RELEASE" level="project" />
     <orderEntry type="library" name="Spring Security-3.2.5" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.40-bin" level="project" />
   </component>
 </module>
