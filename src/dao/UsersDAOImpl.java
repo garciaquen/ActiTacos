@@ -36,10 +36,9 @@ public class UsersDAOImpl implements UsersDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Users> listUsers() {
-		/*Session session = this.sessionFactory.getCurrentSession();
+		Session session = this.sessionFactory.getCurrentSession();
 		List<Users> usersList = session.createQuery("from Users").list();
-		return usersList;*/
-		return null;
+		return usersList;
 	}
 
 	@Override
