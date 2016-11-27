@@ -1,0 +1,15 @@
+<?xml version="1.0"?><!DOCTYPE hibernate-mapping
+        PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.Mode_reglement" table="MODE_REGLEMENT">
+        <id column="id_Mode_reglement" name="id_Mode_reglement" type="int">
+            <generator class="identity"/>
+        </id>
+
+        <property name="nom" type="java.lang.String" column="NOM"/>
+        <property name="delai" type="java.lang.String" column="DELAI"/>
+
+
+    </class>
+</hibernate-mapping>

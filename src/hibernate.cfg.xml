@@ -13,7 +13,7 @@
 
     <!-- Assume test is the database name -->
     <property name="hibernate.connection.url">
-      jdbc:mysql://localhost:3306/projetjee
+      jdbc:mysql://localhost:3306/projetjee?createDatabaseIfNotExist=true
     </property>
     <property name="hibernate.connection.username">
       projetjee
@@ -21,9 +21,20 @@
     <property name="hibernate.connection.password">
       projetjee
     </property>
+    <property name="hibernate.hbm2ddl.auto">create</property>
 
     <!-- List of XML mapping files -->
-    <mapping class="model.Users"/>
+
+    <mapping resource="model/TVA.hbm.xml" />
+    <mapping resource="model/Achat.hbm.xml" />
+    <mapping resource="model/Mode_reglement.hbm.xml" />
 
   </session-factory>
+
+
+
 </hibernate-configuration>
+
+
+
+

@@ -1,0 +1,36 @@
+<?xml version="1.0"?><!DOCTYPE hibernate-mapping
+        PUBLIC "-//Hibernate/Hibernate Mapping DTD 2.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.Achat" table="ACHAT">
+        <id name="id_achat" column="ID_ACHAT" type="java.lang.Integer">
+            <generator class="identity"/>
+        </id>
+
+
+        <property name="num_compte" type="java.lang.Integer" column="NUM_COMPTE"/>
+        <property name="date_compta" type="java.util.Date" column="DATE_COMPTA"/>
+        <property name="date_facture" type="java.util.Date" column="DATE_FACTURE"/>
+        <property name="date_payement" type="java.util.Date" column="DATE_PAYEMENT"/>
+        <property name="immo" type="java.lang.Boolean" column="IMMO"/>
+        <property name="libelle" type="java.lang.String" column="LIBELLE"/>
+        <property name="num_piece" type="java.lang.Integer" column="NUM_PIECE"/>
+        <property name="num_facture" type="java.lang.String" column="NUM_FACTURE"/>
+        <property name="px_u_prevu_ht" type="java.lang.Integer" column="PX_U_PREVU_HT"/>
+        <property name="px_reel_ttc" type="java.lang.Float" column="PX_REEL_TTC"/>
+        <property name="num_groupe" type="java.lang.Integer" column="NUM_GROUPE"/>
+        <property name="montant_ht" type="java.lang.Integer" column="MONTANT_HT"/>
+        <property name="pu_ht" type="java.lang.Integer" column="PU_HT"/>
+        <property name="remise" type="java.lang.Integer" column="REMISE"/>
+        <property name="pu_ht_remise" type="java.lang.Integer" column="PU_HT_REMISE"/>
+        <property name="quantite" type="java.lang.Integer" column="QUANTITE"/>
+        <property name="type_achat" type="java.lang.String" column="TYPE_ACHAT"/>
+
+        <many-to-one name="mode_reglement" class="model.Mode_reglement" column="MODE_REGLEMENT"/>
+        <many-to-one name="tva" class="model.TVA" column="CODE_TVA"/>
+
+
+
+
+    </class>
+</hibernate-mapping>

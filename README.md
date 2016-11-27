@@ -16,7 +16,7 @@ Création de compte
 
 
 Gestion de favori si connecté 
-    -> Stockage d’id de la station + id utilisateur dans un BBD MySQL
+    -> Stockage d’id_Mode_reglement de la station + id_Mode_reglement utilisateur dans un BBD MySQL
 
 
 Calcul des stations les plus proches d’une adresse précise ou de la géolocalisation de l’appareil. + Proposition de route pour y accéder avec calcul temps (en voiture) + cout (essence + péage) .
